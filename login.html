@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+   
+    <style>
+         :root{
+        --vartheme-Color:rgb(227, 230, 13);
+        --accent-color:#ffffc3;
+        /* #e2c3ff */
+    }
+        *{
+            /* margin: 0;
+            padding: 0; */
+            font-family: Roboto;
+        }
+        body{
+            /* background-color: aqua; */
+            margin: 0;
+background-color: var(--accent-color);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            
+            background-image: url(SpongeBob_SquarePants_character.svg.png);
+
+            background-repeat:no-repeat;
+            /* background-size: cover; */
+        }
+
+
+        .card{
+            /* border: 3px solid red; */
+            padding: 10px;
+            border-radius: 5px;
+            background-color: white;
+        
+            width:20%;
+            box-shadow: 3px 3px 10px 3px #00000081;
+            box-sizing: border-box;
+/* 
+            background-image: url(SpongeBob_SquarePants_character.svg.png); */
+            
+        }
+        .form-title{
+            text-align: center;
+            /* font-family: Spicy Rice; */
+            /* font-weight: 100; */
+            
+
+        }
+       
+        .text-input,.submit-btn{
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .text-input{
+          margin-bottom:20px ;
+          margin-top: 10px;
+          padding: 5px;
+          border-radius: 5px;
+          border: none;
+          border-bottom:2px solid var(--vartheme-Color);
+         background-color:var(--accent-color);
+         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.333);
+
+        }
+        .submit-btn{
+            padding: 10px;
+            background-color: var(--vartheme-Color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;  
+        }
+        .link{
+            text-decoration: none;
+            color: var(--vartheme-Color);
+            margin-bottom:20px ;
+            margin-top: 5px;
+            display: block;
+
+        }
+        .signup-link{
+            text-align: center;
+            /* margin-top: 5px; */
+            font-size: 0.8em;
+            font-weight: bold;
+
+
+        }
+        .brand{
+            text-align: center;
+            text-transform: capitalize;
+            font-family: Spicy Rice;
+            font-weight: 100;
+            color: var(--vartheme-Color);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice:regular" rel="stylesheet" />
+</head>
+<body>
+    <div class="card">
+        <h2 class="brand">SpongeBob</h2>
+        <h3 class="form-title">Login Form</h3>
+        <form action="">
+
+            <label for="email">Email Address</label>
+            <input class="text-input" type="email" id="emial">
+
+            <label for="password">Password</label>
+            <input class="text-input" type="password" id="password">
+
+            <a class="link forget-link" href="#">Forget Password?</a>
+            <button class="submit-btn">Submit</button>
+
+            <a href="#" class="link signup-link">Not Registered Yet? Sign Up</a>
+        </form>
+    </div>
+</body>
+</html>
