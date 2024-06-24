@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title><link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        :root{
+            --theme-color:rgb(45, 83, 3);
+            --theme-color-dark:rgb(31, 54, 5);
+            --footer-theme-dark:#072654;
+            --footer-theme:#0F2765;
+        }
+        *{
+            margin:0;
+            padding: 0;
+            font-family: Roboto;
+        }
+
+        header{
+            height: 65vh;
+            /* background-color: yellow; */
+            /* border:2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: url(https://wallpapers-clan.com/wp-content/uploads/2023/11/misty-dark-forest-background-desktop-wallpaper-preview.jpg);
+            background-size: contain;
+            background-position:bottom;
+            /* background-repeat: no-repeat; */
+
+
+        }
+        .header-content
+        {
+            /* border: 2px solid black; */
+            color: white;
+        }
+
+        .header-title{
+            font-size: 50px;
+        }
+
+        .btn{
+        border: none;
+        padding: 10px 20px;
+        /* background-color: white; */
+        border-radius: 5px;
+        }
+
+        .btn-main{
+            background-color: var(--theme-color);
+            color: white;
+            font-weight: bold;
+        }
+        
+        .btn-outline{
+            background-color: whitesmoke;
+            color: var(--theme-color);
+            font-weight: bold;
+            
+        }
+        section{
+            padding: 5% 10%;
+           
+
+        }
+        .section-featurs *{
+            margin-bottom: 30px;
+
+        }
+        .section-title
+        {
+            font-size: 40px;
+            text-align: center;
+        }
+        .section-subtitle{
+            font-size: 20px;
+
+            text-align: center;
+        }
+
+        .card-container
+        {
+            display: flex;
+            gap: 30px;
+        
+        }
+        /* .card-container *{
+            margin-bottom: 30px;
+        } */
+
+        .card{
+            /* outline: 2px solid yellow; */
+            border: 2px solid var(--theme-color);
+            text-align: center;
+            padding: 50px 30px;
+            border-radius: 10px;
+            color: var(--theme-color-dark);
+            transition-duration: 400ms;
+        }
+        .card *{
+            margin-bottom: 25px;
+        }
+
+        .card:hover{
+            color:white;
+            background-color: var(--theme-color-dark);
+            box-shadow: 2px 2px 10px black;
+            transform: translateY(-10px);
+        }
+
+       
+        .service{
+
+            border: 2px solid yellow;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+           
+
+        }
+
+        .service2{
+        grid-template-columns: 2fr 1fr;a
+}
+
+        .service-image{
+            border: 2px solid red;
+        }
+        .service-content{
+            border: 2px solid green;
+            padding: 30px;
+        }
+        .service-content h1{
+            font-size: 30px;
+        }
+
+        /* footer sec1 start  */
+        .footer-sec1{
+            width: 100%;
+            height: 80px;
+            background-color: var(--footer-theme);
+            display: flex;
+        }
+        .footer-sec1-card{
+            padding: 15px;
+            width: 35%;
+            
+            display: flex;
+        }
+
+        .footer-sec1-card  div{
+           margin-right: 10px;
+           color: whitesmoke;
+        }
+        .icon{
+            text-align: center;
+           color: white;
+            background-color: BLACK;
+            border-radius: 50%;
+           height: 40px;
+           width: 40px;
+        }
+        .icon i{
+            transform: translatey(10px);
+        }
+
+
+/* section 2 starting */
+        .footer-sec2{
+            height: 200px;
+            display: flex;
+        }
+        .footer-card{
+          padding-top: 30px;
+          padding-left: 15px;
+          width: 25%;
+            background-color: var(--footer-theme-dark);
+            border-left:1px solid var(--footer-theme);
+            box-shadow:2px 0px 10px black ;
+            color: whitesmoke;
+
+        }
+        .footer-card *{
+            padding-top: 10px;
+        }
+        .footer-subtitle{
+            font-size: 0.8em;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+ 
+        <div class="header-content">
+            <h1 class="header-title">Welcome to Website</h1>
+            <p class="header-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nostrum blanditiis consequuntur ad autem dolor atque optio enim earum temporibus.</p>
+
+            <button class="btn btn-main">Get Started</button>
+            <button class="btn btn-outline">Explore</button>
+
+        </div>
+    
+    </header>
+
+    <main>
+<article>
+    <section class="section-featurs">
+        <h2 class=" section-title">Our Features</h2>
+        <p class="section-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, corrupti.
+        </p>
+        <div class="card-container">
+
+            <div class="card">
+
+                <i class="fa-solid fa-rocket fa-5x"></i>
+                <h3>Card Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam alias sed obcaecati fugiat, officia rem eos sit repellat debitis, vel, cupiditate placeat quo laborum! Repellat reprehenderit voluptate voluptatem cumque repellendus.</p>
+            </div>
+            <div class="card">
+
+                <i class="fa-solid fa-rocket fa-5x"></i>
+                <h3>Card Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam alias sed obcaecati fugiat, officia rem eos sit repellat debitis, vel, cupiditate placeat quo laborum! Repellat reprehenderit voluptate voluptatem cumque repellendus.</p>
+            </div>
+            <div class="card">
+
+                <i class="fa-solid fa-rocket fa-5x"></i>
+                <h3>Card Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam alias sed obcaecati fugiat, officia rem eos sit repellat debitis, vel, cupiditate placeat quo laborum! Repellat reprehenderit voluptate voluptatem cumque repellendus.</p>
+            </div>
+            <!-- <div class="card"></div>
+            <div class="card"></div> -->
+          
+        </div>
+    </section>
+
+    <section class="section-services">
+
+        <div class="service service1">
+            <div class="service-image">
+                <img src="undraw_Mobile_payments_re_7udl (1).png" alt="" style="width: 100%;">
+            </div>
+            <div class="service-content">
+                <h1>First Service Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequatur, facere, omnis eaque corrupti nemo quibusdam pariatur atque repudiandae deleniti reiciendis ipsum nulla illum architecto, aut vero error tenetur! Ratione.</p>
+
+                <button class="btn btn-main">Read More</button>
+
+            </div>
+        </div>
+
+
+        <div class="service service2">
+
+            <div class="service-content">
+                <h1>First Service Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequatur, facere, omnis eaque corrupti nemo quibusdam pariatur atque repudiandae deleniti reiciendis ipsum nulla illum architecto, aut vero error tenetur! Ratione.</p>
+
+                <button class="btn btn-main">Read More</button>
+
+            </div>
+
+            <div class="service-image">
+                <img src="undraw_Mobile_payments_re_7udl (1).png" alt="" style="width: 100%;">
+            </div>
+
+      
+    </section>
+</article>
+
+    </main>
+ 
+
+    <footer>
+        <div class="footer-sec1">
+            <div class="footer-sec1-card">
+                <div class="icon">   <i class="fa-solid fa-phone"></i></div>
+                <div class="footer-sec1-info"><h4>Call Us</h4>
+                    <p>+91 9167398676</p>
+
+                </div>
+                
+            </div>
+            <div class="footer-sec1-card">
+                <div class="icon">   <i class="fa-regular fa-envelope"></i> </div>
+                <div class="footer-sec1-info">
+                    <h4>Mail Us</h4>
+                    
+                    <p>info@cloud9.com</p></div>
+                
+            </div>
+            <div class="footer-sec1-card">
+            <div class="icon">   <i class="fa-solid fa-share"></i></div>
+                <div class="footer-sec1-info"><h4>Follow Us</h4>
+
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+               
+            </div>
+        </div>
+<div class="footer-sec2">
+        <div class="footer-card">
+            <h3 class="footer-title">About Us</h3>
+            <p class="footer-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, recusandae?</p>
+        </div>
+        <div class="footer-card">
+            <h3 class="footer-title">Product &Services</h3>
+            <p class="footer-subtitle">Web Development</p>
+            <p class="footer-subtitle">Android Development</p>
+            <p class="footer-subtitle">Digital Marketing</p>
+            <p class="footer-subtitle">Machine Learning</p>
+        </div>
+        <div class="footer-card">
+            <h3 class="footer-title">Quick Links</h3>
+            <p class="footer-subtitle">Portfolio</p>
+            <p class="footer-subtitle">Blogs</p>
+            <p class="footer-subtitle">About Us</p>
+            <p class="footer-subtitle">Contact Us</p>
+        </div>
+        <div class="footer-card">
+            <h3 class="footer-title">Contacts</h3>
+            <p class="footer-subtitle"><b>Address:</b> Lorem ipsum dolor sit amet.lorem Lorem ipsum dolor sit amet.</p>
+            <p class="footer-subtitle"><b>Email:</b> info@cloud9.com</p>
+            <p class="footer-subtitle"><b>Phone:</b> +91 9167398676</p>
+            <p class="footer-subtitle"><b>Phone:</b> +91 9167398677</p>
+        </div>
+    </div>
+    </footer>
+
+
+</body>
+</html>
